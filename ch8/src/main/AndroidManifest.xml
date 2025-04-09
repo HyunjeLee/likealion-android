@@ -9,12 +9,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Likealionandroid">
         <activity
+            android:name=".sec2.Test2_1Activity"
+            android:exported="true" />
+        <activity
             android:name=".sec1.Sub2Activity"
             android:exported="false" />
         <activity
             android:name=".sec1.Sub1Activity"
             android:exported="false"
-            android:parentActivityName=".sec1.Test1_1Activity"/>
+            android:parentActivityName=".sec1.Test1_1Activity" />
         <activity
             android:name=".sec1.Test1_1Activity"
             android:exported="true" />

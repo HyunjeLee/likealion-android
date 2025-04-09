@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+개발 전반의 xml의 속성에 대한 이야기
+<item> 태그의 android:id=@~ 에서 android는 뭘까? 속성태그?
+아님 !! 속성태그는 android: 뒤의 `id`이고 android는 네임스페이스 !!!
+그래서 xml의 앞 쪽에 선언함
+xmlns:android="http://schemas.android.com/apk/res/android"
+xml name space : android는 위의 url이 네임스페이스
+
+마찬가지로 app의 경우 네임스페이스는 "http://schemas.android.com/apk/res-auto"
+-->
+<!--
+그렇다면 android는 뭐고 res-auto는 무엇일까 ?
+
+하위호환성이 키워드
+activitiy의 하위호환성 문제를 해결하기 위해 AppCompatActivitiy를 상속받아 구현함
+즉 res-auto는 AppCompat의 함수를 사용하므로 해당 네임스페이스가 필요한 것
+-->
+
+<!--
+TextViewd의
+setText()  // 플랫폼 api  // android 네임스페이스 사용
+layout_constraint_~  // constraint는 플랫폼 api가 아님  // 따라서 app 네임스페이스
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu1"
+        android:title="menu1"/>
+    <item
+        android:id="@+id/menu2"
+        android:title="menu2"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu3"
+        android:title="search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+<!--    actionViewClass 속성 선언 시 android와 app 네임스페이스가 둘 다 뜸
+        어느 것을 선택해야될까? -> 대부분 app 네임스페이스 사용  // 둘 다 지원한다는 것은 호환성에 이슈가 있다는 소리이므로
+        마찬가지로 객체 선택시에도 android와 androidx가 뜬다면 androidx 사용
+-->
+
+</menu>
