@@ -33,7 +33,7 @@ public class Test1_1Activity extends AppCompatActivity {
 
         binding.btn1.setOnClickListener(v -> {
             // Sub1Activity는 명시적 호출해야함
-            Intent intent = new Intent(this, Sub1Activity.class);  // todo: 왜 람다로 하면 this 가능 ??
+            Intent intent = new Intent(this, Sub1Activity.class);  // note: 왜 람다로 하면 this 가능 ??  // 람다는 내부 익명클래스를 내부적으로 변형시키는 문법  // 자세한 원리는 이후..
             startActivity(intent);
         });
 
