@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    여러 문자열 리소스를 한번에 출력한다면 arrays.xml 사용
+    R.array.location
+-->
+    <string-array name="location">
+        <item>인천광역시</item>
+        <item>서울시</item>
+        <item>경기도</item>
+        <item>부산시</item>
+        <item>대전시</item>
+        <item>강원도</item>
+        <item>충청도</item>
+    </string-array>
+</resources>

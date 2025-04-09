@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sec3.Test3_1Activity"
+    android:orientation="vertical">
+
+<!--    spannable 정보를 참조해서 textview에 드로잉하려면 buffertype을 spannalbe로
+editText는 buffertype이 editable이며 editable은 spannable를 상속받음-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:bufferType="spannable"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:bufferType="spannable"/>
+
+</LinearLayout>
