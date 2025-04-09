@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ch7_outer</string>
+    <string name="one_description">One Description</string>
+    <string name="two_description">Two Description</string>
+</resources>
