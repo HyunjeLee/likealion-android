@@ -9,33 +9,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Likealionandroid">
         <activity
+            android:name=".sec2.SomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sec2.Test2_1Activity"
+            android:exported="true" />
+        <activity
             android:name=".sec1.Sub4Activity"
             android:exported="true">
             <intent-filter>
-                <action android:name="ACTION_SUB4"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="http"/>
+                <action android:name="ACTION_SUB4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
             </intent-filter>
         </activity>
         <activity
             android:name=".sec1.Sub3Activity"
             android:exported="true">
             <intent-filter>
-                <action android:name="ACTION_SUB3"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="com.example.ch9.CATEGORY_SUB3"/>
+                <action android:name="ACTION_SUB3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.ch9.CATEGORY_SUB3" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".sec1.Sub2Activity"
             android:exported="true">
             <intent-filter>
-                <action android:name="ACTION_SUB2"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="ACTION_SUB2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".sec1.Sub1Activity"
             android:exported="false" />
